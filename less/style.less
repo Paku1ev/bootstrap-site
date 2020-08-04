@@ -1,0 +1,399 @@
+/* Basic settings */
+
+/* Fonts */
+/* font-family: 'Ubuntu', sans-serif; */
+
+.reg() {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.bold() {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 700;
+}
+
+/* Colors */
+@hov-btn-color: #DB1010;
+@text-color: #000000;
+@blue-text-color: #0093FD;
+@light: #ffffff;
+@text-gray: #A3A1A1;
+@btn-color: #0093FD;
+@icon-color: #0093FD;
+
+body, html {
+	padding: 0;
+	margin: 0;
+	color: @text-color;
+	font-size: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+button, input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+	border: none;
+}
+
+/* Шапка */
+.header {
+	display: flex;
+	align-items: center;
+	margin-top: 3rem;
+	background-color: @light;
+	.header-left {
+		display: flex;
+		align-items: center;
+		img {
+			width: 100%;
+		}
+	}
+
+	.header-right {
+		display: flex;
+		align-items: center;
+		p {
+			.reg();
+			font-size: 1.4rem;
+			color: @text-gray;
+		}
+		img {
+			width: 3rem;
+			height: 3rem;
+			margin-left: 1rem;
+			float: left;
+		}
+	}
+}
+
+/* Главный блок */
+.main {
+	background-color: @light;
+	padding-bottom: 8.6rem;
+	background: url(../img/bg-1.png) no-repeat center;
+	display: flex;
+	align-items: center;
+	.left-content {
+		display: flex;
+		flex-direction: column;
+	}
+	span {
+		.reg();
+		font-size: 2rem;
+		margin-top: 16.0rem;
+	}
+	h1 {
+		.bold();
+		font-size: 5.8rem;
+	}
+	p {
+		.reg();
+		font-size: 1.8rem;
+		margin-top: 2.0rem;
+	}
+	a {
+		background-color: @btn-color;
+		color: @light;
+		text-align: center;
+		margin-top: 2rem;
+		padding: 1.2rem 0;
+		width: 19.8rem;
+		font-size: 1.8rem;
+		border-radius: 35px;
+	}
+	a:hover {
+		background-color: @hov-btn-color;
+		transition: all 0.4s ease;
+	}
+	.right-content {
+		img {
+			width: 100%;
+			margin-top: 50%;
+			transform: translateY(-25%);
+		}
+	}
+}
+
+/* Особенности работы */
+.work_with_me {
+	background-color: #EEEEEE;
+	padding: 7.5rem 0;
+	h2 {
+		.bold();
+		font-size: 4rem;
+	}
+	.work-item {
+		margin-top: 5.4rem;
+		.work-item-title {
+			margin-top: 1.4rem;
+			.bold();
+			font-size: 2.4rem;
+		}
+		p {
+			margin-top: 1.5rem;
+			.reg();
+			font-size: 1.8rem;
+		}
+	}
+}
+
+/* Навыки */
+.skills {
+	padding: 7.5rem 0;
+	h2 {
+		.bold();
+		font-size: 4rem;
+
+	}
+	.slills-item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-top: 5rem;
+		img {
+			margin-right: 1.5rem;
+		}
+		.slills-title {
+			.bold();
+			font-size: 2.4rem;
+		}
+	}
+}
+
+/* Последние работы */
+.last_works {
+	padding: 7.5rem 0;
+	background: url(../img/bg-2.png) no-repeat center;
+	.last_works-block-img {
+		width: 46rem;
+		height: 29rem;
+		float: left;
+	}
+	h2 {
+		.bold();
+		font-size: 4rem;
+		margin-bottom: 5rem;
+	}
+	.last_works-block {
+		display: flex;
+		flex-direction: row;
+		.last_works-block-content {
+			.site-name {
+				display: block;
+				.reg();
+				font-size: 2.4rem;
+			}
+			.site-link {
+				display: inline-block;
+				.reg();
+				font-size: 1.8rem;
+				color: @blue-text-color;
+			}
+			.site-link:hover {
+				color: @hov-btn-color;
+				transition: all 0.4s ease;
+			}
+			.time_and_price {
+				margin-top: 1rem;
+				.time_and_price-item {
+					display: block;
+				}	
+				.time_and_price-title {
+					.bold();
+					font-size: 2rem;
+				}
+				.time_and_price-subtitle {
+					.reg();
+					font-size: 1.8rem;
+					margin-left: 1rem;
+				}
+			}
+				.description {
+					.description-title {
+						.bold();
+						font-size: 2rem;
+					}
+					.description-content {
+						.reg();
+						font-size: 1.6rem;
+					}
+				}
+			.custom {
+				.customer {
+					.bold();
+					font-size: 1.8rem;
+				}
+				p {
+					.reg();
+					font-size: 1.6rem;
+				}
+			}
+		}
+	}
+/* Slick слайдер */
+	.slick-active {
+		outline: none;
+	}
+
+	.last_work-arrow {
+		top: 50%;
+		position: absolute;
+		width: 2rem;
+		height: 3.5rem;
+		transform: translateY(-50%);
+		z-index: 99;
+		border: none;
+		background-size: 100%;
+	}
+	.prev {
+		left: 0;
+		background: url(../img/icons/Left-arrow.png) center no-repeat;
+	}
+	.next {
+		right: 0;
+		background: url(../img/icons/Right-arrow.png) center no-repeat;
+	}
+}
+
+/* Обратная связь */
+.me_feedback {
+	padding: 7rem 0;
+	background-color: #EEEEEE;
+	h2 {
+		.bold();
+		font-size: 4rem;
+	}
+	.contacts {
+	margin-top: 8.5rem;
+		span {
+			.bold();
+			font-size: 2.2rem;
+		}
+		p {
+			.reg();
+			font-size: 1.8rem;
+			margin-bottom: 1.6rem;
+		}
+		.me_feedback-link {
+			margin-bottom: 0;
+			font-size: 1.6rem;
+			color: @blue-text-color;
+		}
+		img {
+			margin-top: 1.5rem;
+			margin-right: 1rem;
+		}
+	}
+	.me_feedback-form {
+		border: 2px solid #0093FD;
+		background-color: @light;
+		border-radius: 10px;
+		margin-top: 4rem;
+		padding: 4rem;
+		div {
+			.bold();
+			font-size: 2rem;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		label {
+			font-size: 1.6rem;
+			.bold();
+		}
+		input {
+			border: 2px solid #A3A1A1;
+			border-radius: 4px;
+			width: 100%;
+			padding: 1.5rem 2rem;
+			font-size: 2rem;
+			.reg();
+			margin-bottom: 1.6rem;
+		}
+		button {
+			width: 100%;
+			border-radius: 4px;
+			background-color: @btn-color;
+			.reg();
+			font-size: 2rem;
+			color: @light;
+			padding: 1.5rem 0;
+		}
+		button:hover {
+			background-color: lighten(@btn-color, 10%);
+		}
+	}
+}
+
+/* Страница благодарности за заявку */
+.thank {
+	text-align: center;
+	h1 {
+		margin-top: 15%;
+	}
+	p {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	.thank-link:hover {
+		background-color: @hov-btn-color;
+		color: @light;
+	}
+}
+.thank-link {
+	background-color: @btn-color;
+	color: @light;
+	text-align: center;
+	margin-top: 2rem;
+	padding: 1.2rem 1.2rem;
+	font-size: 1.8rem;
+	border-radius: 35px;
+}
+
+/* Медиа-запросы */
+@media (max-width: 1199px) and (min-width: 992px) {
+	.left-content span {
+		margin-top: 10rem;
+	}
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.left-content span {
+		margin-top: 6rem;
+	}
+
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+	.left-content span {
+		margin-top: 6rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.left-content span {
+		margin-top: 6rem;
+	}
+	.left-content h1 {
+		font-size: 4.5rem;
+	}
+	.right-content {
+		display: none;
+	}
+}

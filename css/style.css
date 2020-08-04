@@ -1,0 +1,421 @@
+/* Basic settings */
+/* Fonts */
+/* font-family: 'Ubuntu', sans-serif; */
+/* Colors */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  font-size: 10px;
+  width: 100%;
+  height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+button,
+input,
+a,
+textarea {
+  border: none;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+/* Шапка */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3rem;
+  background-color: #ffffff;
+}
+.header .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-left img {
+  width: 100%;
+}
+.header .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header-right p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #a3a1a1;
+}
+.header .header-right img {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 1rem;
+  float: left;
+}
+/* Главный блок */
+.main {
+  background-color: #ffffff;
+  padding-bottom: 8.6rem;
+  background: url(../img/bg-1.png) no-repeat center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main .left-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main span {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 16.0rem;
+}
+.main h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 5.8rem;
+}
+.main p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-top: 2.0rem;
+}
+.main a {
+  background-color: #0093fd;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.2rem 0;
+  width: 19.8rem;
+  font-size: 1.8rem;
+  border-radius: 35px;
+}
+.main a:hover {
+  background-color: #db1010;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.main .right-content img {
+  width: 100%;
+  margin-top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+}
+/* Особенности работы */
+.work_with_me {
+  background-color: #EEEEEE;
+  padding: 7.5rem 0;
+}
+.work_with_me h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.work_with_me .work-item {
+  margin-top: 5.4rem;
+}
+.work_with_me .work-item .work-item-title {
+  margin-top: 1.4rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.work_with_me .work-item p {
+  margin-top: 1.5rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+/* Навыки */
+.skills {
+  padding: 7.5rem 0;
+}
+.skills h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.skills .slills-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5rem;
+}
+.skills .slills-item img {
+  margin-right: 1.5rem;
+}
+.skills .slills-item .slills-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+/* Последние работы */
+.last_works {
+  padding: 7.5rem 0;
+  background: url(../img/bg-2.png) no-repeat center;
+  /* Slick слайдер */
+}
+.last_works .last_works-block-img {
+  width: 46rem;
+  height: 29rem;
+  float: left;
+}
+.last_works h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 5rem;
+}
+.last_works .last_works-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.last_works .last_works-block .last_works-block-content .site-name {
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.last_works .last_works-block .last_works-block-content .site-link {
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #0093fd;
+}
+.last_works .last_works-block .last_works-block-content .site-link:hover {
+  color: #db1010;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.last_works .last_works-block .last_works-block-content .time_and_price {
+  margin-top: 1rem;
+}
+.last_works .last_works-block .last_works-block-content .time_and_price .time_and_price-item {
+  display: block;
+}
+.last_works .last_works-block .last_works-block-content .time_and_price .time_and_price-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.last_works .last_works-block .last_works-block-content .time_and_price .time_and_price-subtitle {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+.last_works .last_works-block .last_works-block-content .description .description-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.last_works .last_works-block .last_works-block-content .description .description-content {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.last_works .last_works-block .last_works-block-content .custom .customer {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.last_works .last_works-block .last_works-block-content .custom p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.last_works .slick-active {
+  outline: none;
+}
+.last_works .last_work-arrow {
+  top: 50%;
+  position: absolute;
+  width: 2rem;
+  height: 3.5rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 99;
+  border: none;
+  background-size: 100%;
+}
+.last_works .prev {
+  left: 0;
+  background: url(../img/icons/Left-arrow.png) center no-repeat;
+}
+.last_works .next {
+  right: 0;
+  background: url(../img/icons/Right-arrow.png) center no-repeat;
+}
+/* Обратная связь */
+.me_feedback {
+  padding: 7rem 0;
+  background-color: #EEEEEE;
+}
+.me_feedback h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.me_feedback .contacts {
+  margin-top: 8.5rem;
+}
+.me_feedback .contacts span {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.me_feedback .contacts p {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+.me_feedback .contacts .me_feedback-link {
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  color: #0093fd;
+}
+.me_feedback .contacts img {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+.me_feedback .me_feedback-form {
+  border: 2px solid #0093FD;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 4rem;
+  padding: 4rem;
+}
+.me_feedback .me_feedback-form div {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.me_feedback .me_feedback-form label {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+}
+.me_feedback .me_feedback-form input {
+  border: 2px solid #A3A1A1;
+  border-radius: 4px;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+}
+.me_feedback .me_feedback-form button {
+  width: 100%;
+  border-radius: 4px;
+  background-color: #0093fd;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 1.5rem 0;
+}
+.me_feedback .me_feedback-form button:hover {
+  background-color: #31a9ff;
+}
+/* Страница благодарности за заявку */
+.thank {
+  text-align: center;
+}
+.thank h1 {
+  margin-top: 15%;
+}
+.thank p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.thank .thank-link:hover {
+  background-color: #db1010;
+  color: #ffffff;
+}
+.thank-link {
+  background-color: #0093fd;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1.2rem 1.2rem;
+  font-size: 1.8rem;
+  border-radius: 35px;
+}
+/* Медиа-запросы */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .left-content span {
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .left-content span {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 767px) and (min-width: 576px) {
+  .left-content span {
+    margin-top: 6rem;
+  }
+}
+@media (max-width: 575px) {
+  .left-content span {
+    margin-top: 6rem;
+  }
+  .left-content h1 {
+    font-size: 4.5rem;
+  }
+  .right-content {
+    display: none;
+  }
+}
